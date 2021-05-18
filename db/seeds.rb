@@ -8,6 +8,13 @@
 
 # ID3 tag music genres are surprisingly specific.
 
+Genre.destroy_all
+Artist.destroy_all
+
+Artist.create(name: "Mozart")
+Artist.create(name: "Khalid")
+Artist.create(name: "50 Cent")
+
 genres = Hash[[
   "Blues",
   "Classic Rock",
